@@ -1,0 +1,15 @@
+.counts{
+  margin: 12px 0;
+  color:var(--text-color-secondary);    
+  flex: 1;
+}
+
+.input_wrapper {
+  display: flex; 
+}
+
+@media screen and (max-width:720px){
+  .input_wrapper{
+    flex-direction: column;
+  }  
+}
