@@ -1,4 +1,4 @@
-.overview_panel img {
+.overview_panel Image {
   width: 100%;
   border-radius: 4px;
 }
@@ -68,7 +68,7 @@ grid-template-columns: repeat(auto-fill,minmax(120px,1fr));
 gap: 24px;
 }
 
-.details_panel_borders img{
+.details_panel_borders Image{
     width: 100%;
     border-radius: 4px;
 }
