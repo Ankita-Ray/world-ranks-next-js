@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { useEffect, useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import styles from './country.module.css';
@@ -38,7 +39,7 @@ const Country=({country})=>{
                         
                     <div className={styles.overview_panel}>
                         
-                        <img src={country.flag} alt={country.name} />
+                        <Image width="290%" height="150%" objectFit="cover" layout="fixed" src={country.flag} alt={country.name} />
                         
                         <h1 className={styles.overview_name}>
                             {country.name}
@@ -113,7 +114,7 @@ const Country=({country})=>{
                                 {
                                     borders.map(({flag,name})=>
                                         <div className={styles.details_panel_borders_country} key={name}>
-                                            <img src={flag} alt={name} />
+                                            <Image width="150%" height="80%" layout="fixed" objectFit="cover" src={flag} alt={name} />
                                             <div className={styles.details_panel_borders_name}>{name}</div>
                                         </div>
                                     )

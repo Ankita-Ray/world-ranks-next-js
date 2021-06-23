@@ -33,7 +33,8 @@
     padding: 20px;
 
     text-align: center;
-
+    align-items: center;
+    
     background-color: var(--background-color-light);
     border-radius: 8px;
     margin-bottom: 16px;
@@ -78,11 +79,13 @@
 .flag{
     flex:1;
     margin-right: 16px;
+    border: 1px solid var(--text-color-secondary);
+    height: 42px;
 }
 
-.flag img{
+/* .flag img{
     width: 100%;
-}
+} */
 
 @media  screen and (max-width:720px){
     

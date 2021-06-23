@@ -1,5 +1,6 @@
 import { KeyboardArrowUpRounded } from '@material-ui/icons';
 import KeyboardArrowDownRounded from '@material-ui/icons/KeyboardArrowDownRounded';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from './CountriesTable.module.css';
@@ -113,8 +114,8 @@ const CountriesTable=({countries})=>{
                   <div className={styles.row}>
                     
                     
-                    <div className={styles.flag}>
-                        <img src={country.flag} alt={country.name} />
+                    <div className={styles.flag}> 
+                        <Image width="60%" height="40%" quality="20" objectFit="cover" layout="fixed" src={country.flag} alt={country.name} />
                     </div>
 
                     <div className={styles.name}>
